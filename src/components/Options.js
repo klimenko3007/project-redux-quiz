@@ -10,7 +10,15 @@ export const Options = () => {
     <div>
       {question.options.map((option) => {
         return (
-          <label htmlFor={option} key={option} onClick={() => dispatch(quiz.actions.submitAnswer())}>
+          <label
+            htmlFor={option}
+            key={option}
+            onClick={() => dispatch(quiz.actions.submitAnswer(
+              {
+                questionId: question.id,
+                answerIndex: question.options.indexOf(option)
+              }
+            ))}>
             <input type="radio" name="radio" value={option} id={option} />
             {option}
           </label>
