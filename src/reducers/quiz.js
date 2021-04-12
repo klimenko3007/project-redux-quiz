@@ -2,8 +2,11 @@ import { createSlice } from '@reduxjs/toolkit'
 
 // Change these to your own questions!
 const questions = [
-  { id: 1, questionText: 'Who set the Olympic record for the 100m dash in 2012?', options: ['Usain Bolt', 'Justin Gatlin', 'Tyson Gay', 'Asafa Powell'], correctAnswerIndex: 0 },
-  { id: 2, questionText: 'When was Michael Phelps last named male World Swimmer of the Year?', options: ['2012', '2014', '2016', '2018'], correctAnswerIndex: 2 }
+  { id: 1, questionText: 'Which Hogwarts house does Hurry Potter bellong to?', options: ['Gryffindor', 'Huffelpuff', 'Ravenclaw', 'Slytherin'], correctAnswerIndex: 0 },
+  { id: 2, questionText: 'What is the name of the most popular sport in Harry Potter Universe?', options: ['Squimble Ball', 'Sorting Hat', 'Quidditch', 'Broom Races'], correctAnswerIndex: 2 },
+  { id: 3, questionText: 'How many are there Harry Potter books?', options: ['2', '7', '8', '10'], correctAnswerIndex: 1 },
+  { id: 4, questionText: 'What is the name of Weasly family home?', options: ['The Cave', 'The Basement', 'The Barrow', 'The Farrow'], correctAnswerIndex: 2 },
+  { id: 5, questionText: 'What is Hermiony patronus?', options: ['Dog', 'Otter', 'Hare', 'Stag'], correctAnswerIndex: 1 }
 ]
 
 const initialState = {

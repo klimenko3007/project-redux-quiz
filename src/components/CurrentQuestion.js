@@ -1,6 +1,9 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
+import { NextButton } from './NextButton'
+import { Options } from './Options'
+
 export const CurrentQuestion = () => {
   const question = useSelector((state) => state.quiz.questions[state.quiz.currentQuestionIndex])
 
@@ -11,6 +14,8 @@ export const CurrentQuestion = () => {
   return (
     <div>
       <h1>Question: {question.questionText}</h1>
+      <Options />
+      <NextButton />
     </div>
   )
 }
