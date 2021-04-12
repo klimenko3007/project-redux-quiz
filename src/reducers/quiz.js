@@ -2,11 +2,11 @@ import { createSlice } from '@reduxjs/toolkit'
 
 // Change these to your own questions!
 const questions = [
-  { id: 1, questionText: 'Which Hogwarts house does Hurry Potter bellong to?', options: ['Gryffindor', 'Huffelpuff', 'Ravenclaw', 'Slytherin'], correctAnswerIndex: 0 },
-  { id: 2, questionText: 'What is the name of the most popular sport in Harry Potter Universe?', options: ['Squimble Ball', 'Sorting Hat', 'Quidditch', 'Broom Races'], correctAnswerIndex: 2 },
-  { id: 3, questionText: 'How many are there Harry Potter books?', options: ['2', '7', '8', '10'], correctAnswerIndex: 1 },
-  { id: 4, questionText: 'What is the name of Weasly family home?', options: ['The Cave', 'The Basement', 'The Barrow', 'The Farrow'], correctAnswerIndex: 2 },
-  { id: 5, questionText: 'What is Hermiony patronus?', options: ['Dog', 'Otter', 'Hare', 'Stag'], correctAnswerIndex: 1 }
+  { id: 1, questionText: 'Which Hogwarts house does Harry Potter belong to?', options: ['Gryffindor', 'Hufflepuff', 'Ravenclaw', 'Slytherin'], correctAnswerIndex: 0 },
+  { id: 2, questionText: 'What is the most popular sport in the Harry Potter universe?', options: ['Squimble Ball', 'Sorting Hat', 'Quidditch', 'Broom Races'], correctAnswerIndex: 2 },
+  { id: 3, questionText: 'How many Harry Potter books are there?', options: ['2', '7', '8', '10'], correctAnswerIndex: 1 },
+  { id: 4, questionText: 'What is the name of the Weasley family\'s home?', options: ['The Cave', 'The Basement', 'The Burrow', 'The Furrow'], correctAnswerIndex: 2 },
+  { id: 5, questionText: 'What is Hermione\'s patronus?', options: ['Dog', 'Otter', 'Hare', 'Stag'], correctAnswerIndex: 1 }
 ]
 
 const initialState = {

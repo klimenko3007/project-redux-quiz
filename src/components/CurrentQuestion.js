@@ -12,8 +12,16 @@ export const CurrentQuestion = () => {
   }
 
   return (
-    <div>
-      <h1>Question: {question.questionText}</h1>
+    <div className="question-container">
+      <img className="HP-emblem" src="https://img1.etsystatic.com/101/0/11982840/il_570xN.874625761_oclj.jpg" alt="Something" />
+      <h1 className="question-number">Question {question.id} </h1>
+      {question.id === 1 && <img className="image" src="./assets/Hogwartshouse .jpeg" alt="Hogwarts" />}
+      {question.id === 2 && <img className="image" src="./assets/Quidditch.jpeg" alt="Quidditch" />}
+      {question.id === 3 && <img className="image" src="./assets/books.jpeg" alt="Books" />}
+      {question.id === 4 && <img className="image" src="./assets/barrow.png" alt="Weasly Home" />}
+      {question.id === 5 && <img className="image" src="./assets/hermiony.png" alt="Hermiony" />}
+
+      <h2 className="question">{question.questionText}</h2>
       <Options />
       <NextButton />
     </div>
