@@ -5,8 +5,10 @@ export const Answers = () => {
   const answer = useSelector((state) => state.quiz.answers)
   return (
     <div className="answer-summary">
-      <h2>Your answer:</h2>
-      <h2>Correct answer:</h2>
+      <div className="answer-header">
+        <h2>Your answer:</h2>
+        <h2>Correct answer:</h2>
+      </div>
       {answer.map((item) => {
         return (
 

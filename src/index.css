@@ -97,26 +97,25 @@ code {
 }
 
 .answer-summary {
+
+}
+
+.answer-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  text-align: left;
-  border: 1px solid green
 }
 
 .answers-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
+  grid-gap: 20px;
 }
+
 .answer-summary .your-answer {
-  /* margin: 15px; */
-  text-align: left;
-  border: grey 1px solid;
+  /* text-align: left; */
 }
 
 .answer-summary .correct-answer {
-  /* margin: 15px; */
-  text-align: left;
-  border: pink 1px solid;
+  /* text-align: left; */
 }
