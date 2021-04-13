@@ -7,6 +7,7 @@ export const Options = () => {
   const dispatch = useDispatch()
   const [disabled, setDisabled] = useState()
   const question = useSelector((store) => store.quiz.questions[store.quiz.currentQuestionIndex])
+  // eslint-disable-next-line max-len
   const answer = useSelector((state) => state.quiz.answers.find((a) => a.questionId === question.id))
   useEffect(() => {
     setDisabled(false)

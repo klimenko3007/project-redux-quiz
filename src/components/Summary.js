@@ -15,12 +15,12 @@ export const Summary = () => {
   return (
     <div className="summary-container">
       <h1 className="summary-header">Your score is {counter}/5</h1>
-      {counter >= 5 && (
+      {counter >= 4 && (
         <div>
           <h2>You are a huge fan! You will get a letter from Hogwarts Soon!</h2>
           <img className="image" src="./assets/harry-potter-fans.jpeg" alt="Fans" />
         </div>)}
-      {counter >= 3 && (
+      {counter === 3 && (
         <div>
           <h2>Almost there! You just need to read a bit more!</h2>
           <img className="image" src="./assets/nedladdning.jpeg" alt="Books" />
@@ -28,7 +28,7 @@ export const Summary = () => {
       {counter < 3 && (
         <div>
           <h2>Ooh nooo, you dont like Harry Potter? Why?</h2>
-          <img className="image" src="./assets/hate1.png" alt="Hogwarts" />
+          <img className="image" src="./assets/hate1.jpeg" alt="Hogwarts" />
         </div>)}
       <Answers />
       <RestartButton />
