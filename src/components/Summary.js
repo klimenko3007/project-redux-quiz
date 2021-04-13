@@ -13,13 +13,24 @@ export const Summary = () => {
     }
   })
   return (
-    <div className="question-container">
-      <h1>Your score is: {counter}/5 questions correct</h1>
-      {counter === 5 && <h2>You are a huge fan</h2>}
-      {counter === 3 && <h2>Almost there</h2>}
-      {counter < 3 && <h2>Ooh nooo you dont like Harry Potter? Why?</h2>}
+    <div className="summary-container">
+      <h1 className="summary-header">Your score is {counter}/5</h1>
+      {counter >= 5 && (
+        <div>
+          <h2>You are a huge fan! You will get a letter from Hogwarts Soon!</h2>
+          <img className="image" src="./assets/harry-potter-fans.jpeg" alt="Fans" />
+        </div>)}
+      {counter >= 3 && (
+        <div>
+          <h2>Almost there! You just need to read a bit more!</h2>
+          <img className="image" src="./assets/nedladdning.jpeg" alt="Books" />
+        </div>)}
+      {counter < 3 && (
+        <div>
+          <h2>Ooh nooo, you dont like Harry Potter? Why?</h2>
+          <img className="image" src="./assets/hate1.png" alt="Hogwarts" />
+        </div>)}
       <Answers />
-
       <RestartButton />
     </div>
   )

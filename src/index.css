@@ -8,7 +8,8 @@ body {
   
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-  
+  background: linear-gradient(0deg, rgba(192,20,238,1) 0%, rgba(218,168,233,1) 100%);
+  background-repeat: no-repeat;
 }
 
 code {
@@ -17,23 +18,28 @@ code {
 }
 
 .question-container{
+  padding: 30px;
+  box-sizing: border-box;
   position: relative;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(0deg, rgba(192,20,238,1) 0%, rgba(218,168,233,1) 100%);
   background-repeat: no-repeat;
+  border: 1px solid green;
 }
+
 .question-number{
   font-size: 30px;
   text-align: center;
 }
+
 .question {
   font-size: 23px;
   text-align: center;
   
 }
+
 .buttons-wrapper{
   display: flex;
   flex-wrap: wrap;
@@ -57,19 +63,18 @@ code {
 
 .image{
   width: 300px;
-  height: 200px;
+  height: 250px;
   border: 3px solid rgba(218,168,233,1);
-  border-radius: 12px; 
+  border-radius: 12px;
+  object-fit: cover; 
 }
 
-.HP-emblem{
-  position: absolute;
+.HP-emblem {
   border-radius: 100%;
   z-index: 2;
-  height: 10%;
-  top: 43%;
-  left: 45%;
+  width: 15%;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+  margin: 50px;
 }
 
 .next-btn{
@@ -96,8 +101,23 @@ code {
   background-color: green;
 }
 
-.answer-summary {
+.summary-container{
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(192,20,238,1) 0%, rgba(218,168,233,1) 100%);
+  background-repeat: no-repeat;
+  padding: 10px;
+}
 
+.summary-header {
+  color: rgb(89, 87, 87);
+}
+.answer-summary {
+  
 }
 
 .answer-header {
@@ -112,10 +132,34 @@ code {
   grid-gap: 20px;
 }
 
-.answer-summary .your-answer {
-  /* text-align: left; */
+
+@media (min-width: 600px) {
+  .HP-emblem {
+    width: 7%;
+  }
+
+  .white:hover{
+    background-color: rgba(218,168,233,1);
+    color: #000;
+  }
+
+  .red:hover, .green:hover{
+    background-color: red;
+  }
+
+  .green:hover{
+    background-color: green;
+  }
+}
+@media (min-width: 658px){
+  .question-container {
+    height: 100vh;
+  }
 }
 
-.answer-summary .correct-answer {
-  /* text-align: left; */
+@media (min-width: 900px) {
+  .HP-emblem {
+    width: 5%;
+  }
+  
 }

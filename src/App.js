@@ -12,7 +12,6 @@ import { Container } from './components/Container'
 // [] CSS final touches
 // [] CountDown
 
-
 const reducer = combineReducers({
   quiz: quiz.reducer
 })
