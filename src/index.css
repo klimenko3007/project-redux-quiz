@@ -41,7 +41,7 @@ code {
   position: relative;
 }
 
-.white {
+.white{
   background-color: #fff;
   width: 45%;
   margin: 5px;
@@ -55,15 +55,14 @@ code {
   vertical-align: middle;
 }
 
-.image {
+.image{
   width: 300px;
   height: 200px;
   border: 3px solid rgba(218,168,233,1);
-  border-radius: 12px;
-  
+  border-radius: 12px; 
 }
 
-.HP-emblem {
+.HP-emblem{
   position: absolute;
   border-radius: 100%;
   z-index: 2;
@@ -73,7 +72,7 @@ code {
   box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
 }
 
-.next-btn {
+.next-btn{
   margin-top: 40px;
   background-color: rgb(255, 255, 255);
   padding: 20px;
@@ -84,8 +83,9 @@ code {
   color: rgb(171, 170, 170);
 }
 
-.next-btn:hover {
+.next-btn:hover{
   background-color: rgba(218,168,233,1);
+  color: #000;
 }
 
 .red{
@@ -94,4 +94,29 @@ code {
 
 .green{
   background-color: green;
+}
+
+.answer-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  text-align: left;
+  border: 1px solid green
+}
+
+.answers-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+.answer-summary .your-answer {
+  /* margin: 15px; */
+  text-align: left;
+  border: grey 1px solid;
+}
+
+.answer-summary .correct-answer {
+  /* margin: 15px; */
+  text-align: left;
+  border: pink 1px solid;
 }

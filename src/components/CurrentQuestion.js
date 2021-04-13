@@ -14,7 +14,7 @@ export const CurrentQuestion = () => {
   return (
     <div className="question-container">
       <img className="HP-emblem" src="https://img1.etsystatic.com/101/0/11982840/il_570xN.874625761_oclj.jpg" alt="Something" />
-      <h1 className="question-number">Question {question.id} </h1>
+      <h1 className="question-number">Question {question.id} / 5</h1>
       {question.id === 1 && <img className="image" src="./assets/Hogwartshouse .jpeg" alt="Hogwarts" />}
       {question.id === 2 && <img className="image" src="./assets/Quidditch.jpeg" alt="Quidditch" />}
       {question.id === 3 && <img className="image" src="./assets/books.jpeg" alt="Books" />}
