@@ -5,13 +5,6 @@ import { quiz } from 'reducers/quiz'
 
 import { Container } from './components/Container'
 
-//TO-DO
-//[X] Disable nextQuestion until answer is given, so user can't answer nothing?
-// [X] Show more in the summary
-// [] Progress bar
-// [] CSS final touches
-// [] CountDown
-
 const reducer = combineReducers({
   quiz: quiz.reducer
 })
